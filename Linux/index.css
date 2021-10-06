@@ -1,0 +1,18 @@
+body{
+    margin: 10px;
+}
+
+table{
+    border: 2;
+    border-style: solid;
+    font-size: 50px;
+    width: 680px;
+}
+
+.table_tartalom{
+    width: 650px;
+    margin-top: 50px;
+    border-style: none;
+    border: 0;
+    font-size: 20px;
+}
