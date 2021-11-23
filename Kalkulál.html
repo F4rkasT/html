@@ -16,9 +16,9 @@
         <input type="number" name="suly">
         <select name="távolság"  id="">
             <script> 
-                var varosok = [['Balmazújváros',28],['Hajdúböszrmény',19],['Hajdúnánás',46],['Hajdúdorog',36],['Hajdúvíd',30]];  //tárolás
-                for (let i = 0; i < varosok.length; i++) { //ciklus
-                    document.write("<option value="+varosok[i][1]+">"+varosok[i][0]+"</option>"); //hozzáadjuk a városokat
+                var varosok = [['Balmazújváros',28],['Hajdúböszrmény',19],['Hajdúnánás',46],['Hajdúdorog',36],['Hajdúvíd',30]];  //Az adatok tárolás
+                for (let i = 0; i < varosok.length; i++) { //végigmegy a ciklus a tömb elemein
+                    document.write("<option value="+varosok[i][1]+">"+varosok[i][0]+"</option>"); //hozzáadja a listához az aktuális elemet
                 } 
             </script> 
         </select> 
@@ -26,7 +26,7 @@
     </form> 
 
     <script> 
-        function szamolas(suly,tavolsag){ // funkció megadása
+        function szamolas(suly,tavolsag){
             const ALAPDÍJ = 2000; // Alapdíj megadása
             const SÚLYDÍJ = 100; // súlydíj megadása
             const TÁVDÍJ = 150; // Távdíj megadása
