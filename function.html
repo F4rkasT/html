@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+    <form name="feecalculator">
+
+        <label>Adja meg a város nevét:</label>
+        <select id="town" onclick="popMenu(document.feecalculator.town)">
+            <option>Válasszon várost</option>
+        </select>
+
+        <label>Adja meg a csomag sulyát (kg):</label>
+        <input type="number" name="weight" id="weight"> 
+
+        <input type="button" value="Kalkulál!" onclick="feeCalculator(document.feecalculator.town.value, document.feecalculator.weight.value)">
+    </form>
+
+    <script>
+
+        function popMenu(t) {
+            var townList = [['Budapest', 232], ['Szeged', 230], ['Miskolc', 114], ['Pécs', 474], ['Győr', 377], ['Nyíregyháza', 50], ['Kecskemét', 184], ['Székesfehérvár', 317], ['Szombathely', 458], ['Szolnok', 130]]
+
+            if (t.options.length == 1) { //ha függvény
+
+            for(var i = 0; i < townList.length; i++){ // Ciklus ami végig fut
+        
+                var towns = townList[i]; //tömb 
+
+                var el = document.createElement("option"); //választó elem létrehozása
+                el.textContent = towns[0]; // szöveg kiírása a helyre
+                el.value = towns[1]; // érték = a townsal
+                t.appendChild(el); //hozzáad elemet
+
+            }
+        }
+    }
+        function feeCalculator(d, w) { // funkció megadása
+
+
+            var weightFee = w * 100; //kiszámolja a súlyt
+            var distanceFee = d * 150;//kiszámolja a távot
+            var total = weightFee+ distanceFee + 2000; //összeadja
+
+            alert("Alapdíj: 2000Ft," + " Súlydíj: " +weightFee +"Ft," + " Km díj: " + distanceFee + "Ft," + " Összesen: " + total + "Ft") //kiiratja
+
+        }
+
+    </script>
+    
+</body>
+</html>
