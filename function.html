@@ -28,14 +28,14 @@
 
             if (t.options.length == 1) { //ha függvény
 
-            for(var i = 0; i < townList.length; i++){ // Ciklus ami végig fut
+            for(var i = 0; i < townList.length; i++){ // Ciklus ami végig fut a tömb elemein
         
-                var towns = townList[i]; //tömb 
+                var towns = townList[i]; //változó amibe a tömb aktuális elemét tároljuk
 
-                var el = document.createElement("option"); //választó elem létrehozása
-                el.textContent = towns[0]; // szöveg kiírása a helyre
-                el.value = towns[1]; // érték = a townsal
-                t.appendChild(el); //hozzáad elemet
+                var el = document.createElement("option"); //lift elem létrehozása
+                el.textContent = towns[0]; // A város nevét adjuk hozzá
+                el.value = towns[1]; // érték = A távolságot adjuk hozzá
+                t.appendChild(el); //hozzáadja az elemet a listához
 
             }
         }
