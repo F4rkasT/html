@@ -1,0 +1,27 @@
+Első feladat: (Sales Orders adatbázis)
+1. SELECT (`RetailPrice` * 0.95 * `QuantityOnHand`) AS "Ár" FROM `products`
+
+2. SELECT `OrderDate` AS "idő" FROM `orders` ORDER BY `OrderDate` DESC
+
+3. SELECT `VendName` AS "neve", CONCAT(`VendStreetAddress`, " ", `VendCity`, " ",`VendZipCode`) AS "címeik" FROM `vendors` ORDER BY `VendName`
+
+Második feladat: (Entertainment Agency adatbázis)
+1. SELECT CONCAT(`CustFirstName`, " ", `CustLastName`) AS "neve", `CustCity` AS "címe" FROM `customers` ORDER BY `CustCity`
+
+2. SELECT `EntStageName` AS "neve", `EntWebPage` AS "webcím" FROM `entertainers`
+
+3. SELECT CONCAT(`AgtFirstName`, " ", `AgtLastName`) AS "neve", (DATE_ADD(`DateHired`, interval 6 month)) AS "6 hónapos teljesítmény" FROM `agents`
+
+Harmadik feladat: (School Scheduling adatbázis)
+1. SELECT CONCAT(`StfFirstName`, " ", `StfLastname`) AS "neve", `Salary` AS "Bérezés" FROM `staff` ORDER BY `Salary` DESC
+
+2. SELECT CONCAT(`StfFirstName`, " ", `StfLastname`) AS "neve", `StfPhoneNumber` AS "Telefonszámaik" FROM `staff`
+
+3. SELECT CONCAT(`StudFirstName`, " ", `StudLastName`) AS "neve", `StudCity` AS "Város" FROM `students` ORDER BY `StudCity`
+
+Negyedik feladat: (Bowling League adatbázis)
+1. SELECT DATE(`TourneyDate`), `TourneyLocation` FROM `tournaments` ORDER BY `TourneyLocation`
+
+2. SELECT CONCAT(`BowlerLastName`, " ", `BowlerFirstName`) AS "neve", `BowlerPhoneNumber` AS "Telefonszámaik"  FROM `bowlers`
+
+3. SELECT `OddLaneTeamID`, `EvenLaneTeamID` FROM `tourney_matches` ORDER BY `OddLaneTeamID` DESC
