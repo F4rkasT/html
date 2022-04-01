@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Március15</title>
+</head>
+
+<body style="height: 100%;">
+<script>
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+
+  </script>
+    <div align="center" style="background-color: red; height: 33.3vh;"><h1>Március 15</h1></div>
+  <div align="center" style="height: 33.3vh; font-size: medium;">A szabadságharc bukása után valamennyi társadalmi réteg titokban ápolta március 15-e emlékét, pedig a megtorlás évei alatt nemcsak a forradalom
+    vívmányainak megemlítése volt tiltott, hanem a Kossuth-szakáll, a piros-fehér zöld szín és a Rákóczi-nóta is.
+    
+    Az 1867-es kiegyezést követően szabadabbá, de az osztrák–magyar együttműködés érdekében óvatosabbá is vált a megemlékezés. 1898-ban, a fél évszázados évforduló alkalmából hallgatólagosan elfogadták március 15-e megünneplését, állami ünneppé azonban az 1848-as törvények szentesítésének napját, április 11-ét tették.
+    
+    Március 15-e 1928-ban vált hivatalos keretek közt megtartott nemzeti megemlékezéssé. A kommunisták az 1950-es években eltörölték (az 1956-os forradalom több ponton felelevenítette 1848 eszméit), majd később újra visszaállították a szigorúan meghatározott keretek közti megünneplését.
+    
+    A rendszerváltozás után az Országgyűlés nyilvánította hivatalos nemzeti ünneppé az 1991. évi VIII. tv.alapján, amelyet a 2012-es Alaptörvény is megerősített.
+    
+    A nemzeti ünnepen Magyarország lobogójának felvonása után a forradalom kiemelt helyszínein (a Nemzeti Múzeumnál, a budai várban) emlékeznek
+    meg a forradalomról.</div>
+  <div align="center" style="background-color: green; height: 33.3vh;"><iframe width="35%" height="99%" id="inlineFrameExample" src="https://www.youtube.com/embed/KDNztux0cdw"></iframe>  <button style="float: right; font-size: medium" onclick="topFunction()" id="myBtn" title="Go to top">Vissza a tetejére</button><a style="float: left; font-size: x-large;" href="index.html">Pilvax-kör</a></div>
+</body>
+</html>
