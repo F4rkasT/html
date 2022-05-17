@@ -1,0 +1,61 @@
+body {
+
+  color: rgb(148, 23, 23);
+  background-image: url("háttér.jpg");
+  background-repeat: no-repeat;
+}
+
+.mozi {
+  position: absolute;
+  top: 65%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.mozi-szék {
+  display: flex;
+}
+
+.mozi-szék .szék {
+  cursor: pointer;
+}
+
+.mozi-szék .szék:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(247, 143, 7);
+  border-radius: 7px;
+}
+
+.mozi-szék .szék.active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(247, 143, 7);
+  border-radius: 7px;
+}
+
+.jobb {
+  margin-left: 70px;
+}
+
+.jobb .mozi-sor {
+
+  margin: 0 6px;
+}
+
+.jobb .szék {
+  width: 35px;
+  height: 50px;
+  border-radius: 7px;
+  background:#5e1f00;
+  margin-bottom: 10px;
+  transform: skew(-1deg);
+  margin-top: -32px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

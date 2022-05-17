@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hu" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mozi</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+
+<body>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>  
+
+  <h1 align="center"> Foglaljon széket!<h1>
+<div class="mozi">
+ 
+
+  <div class="mozi-szék jobb">
+    <div class="mozi-sor sor-1">
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+    </div>
+
+    <div class="mozi-sor sor-2">
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+    </div>
+
+    <div class="mozi-sor sor-3">
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+    </div>
+
+    <div class="mozi-sor sor-4">
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+    </div>
+
+    <div class="mozi-sor sor-5">
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+    </div>
+
+    <div class="mozi-sor sor-6">
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+    </div>
+
+    <div class="mozi-sor sor-7">
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+    </div>
+
+    <div class="mozi-sor sor-8">
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+      <div class="szék"></div>
+    </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
